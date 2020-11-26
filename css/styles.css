@@ -104,13 +104,12 @@ a {
 @media screen and (max-width: 992px){
 
   .introduction p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .introduction {
     width: 75%;
     margin: 0 12.5%;
-    text-align: justify;
   }
 
   .introduction .intro-intro {
@@ -123,6 +122,5 @@ a {
   .introduction {
     width: 75%;
     margin: 0 12.5%;
-    
   }
 }
