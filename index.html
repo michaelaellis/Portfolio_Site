@@ -1,110 +1,127 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+html {
+  color: white;
+  height: 100%;
+}
 
-<head>
-  <meta charset="utf-8">
-  <title>Michael Ellis - Game Designer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/690043a481.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+.bg-img {
+  background-image: url("../images/cubes_background.png");
+  height: auto;
+  background-position: center;
+  background-repeat: space;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-<body class="bg-dark bg-img">
+hr{
+  height: 5px;
+  width: 98%;
+  margin: 0 0 2% 1%;
+  background-color: white;
+}
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="contactme.html">Michael Ellis</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class=navbar-toggler-icon></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav navbar-dark ml-auto">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link " href="blog.html">Blog <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="contactme.html">Contact Me <span class="sr-only">(current)</span></a>
-        </div>
-      </div>
-    </nav>
-  </header>
+a {
+  color: white;
+}
 
-  <hr>
+/*----------Navbar----------*/
 
-  <!-- Introduction Area -->
-  <div class="introduction">
-    <div>
-      <div class="intro-text">
-        <p class="intro-intro">
-          Game & Level Designer
-        </p>
-      </div>
-      <br>
-      <p>My name is Michael Ellis and I'm a Full Sail Alumni with a Master's in game design.</p>
-      <p>During my studies at Full Sail, I had the opportunity to gain real world experience by completing my capstone with CelleC Games. With this opportunity
-        I gained experience in
-        <a href="#" data-toggle="tooltip" title="6+ years experience">Game Design</a>,
-        <a href="#" data-toggle="tooltip" title="1+ years experience">Level Design</a>,
-        <a href="#" data-toggle="tooltip" title="3+ years experience">Scripting</a>, and
-        <a href="#" data-toggle="tooltip" title="2+ years experience">Production</a>.
-        I am passionate about game design, not only because making games is fun and challenging, but also games bring a smile to people's faces. Fully immersing yourself into a world only conceivable
-        by imagination and becoming someone else for a little while...that is why I'm passionate about game design. Crafting levels, balancing stats, or writing game design documents I always go above and beyond.
-      </p>
-      <p>Enough about me...I am sure you want to see what I have done.</p>
-      <p>Go ahead, <b>scroll</b>. You know you want to!</p>
-      <br>
-    </div>
-  </div>
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
 
-  <hr>
+.navbar-brand {
+  font-size: 200%;
+  font-family: 'Rubik', monospace;
+  margin-left: 1.5%;
+  text-shadow: 2px 2px #000000;
+}
 
-  <div class="shipped-heading-div">
-    <h2 class="shipped-heading">Shipped Projects</h2>
-  </div>
+.nav-item {
+  text-shadow: 2px 2px #000000;
+}
 
-  <section class="shipped-projects">
+/*-----------------Introduction------------*/
 
-    <!--Lorekeeper Grid-->
-    <div class="container shipped-container">
-      <div class="row">
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-8">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/Wdq60Ida5uw?ps=play&vq=large&rel=0&autohide=1&showinfo=0&authuser=0"></iframe>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <p class="text-nowrap">Download: <a href="https://play.google.com/store/apps/details?id=com.cellec.lorekeeper2" target="_blank">Android</a></p>
-        </div>
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-8">
-          <h3 class="shipped-heading">Lorekeeper: Chapter 2 (2017)</h3>
-          <p class="shipped-text">Game Design & Lead Programmer</p>
+.introduction {
+  width: 50%;
+  margin: 0 25%;
+  padding: 1.3em 0;
+  text-align: center;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
 
-          <p>Lorekeeper was a title that I needed to learn a new tool for. Specifically, Fungus, a free Unity package.
-          I came across a few problems with the Fungus system as I progressed, however, nothing a bit of C#
-          could not handle. During development I also had a chance to play with the Unity animation system
-          to make the main menu UI.</p>
+.introduction .intro-intro {
+  width: 100%;
+  font-size: 300%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 2px #000000;
+  text-align: center;
+}
 
-          <ul>
-            <li>Designed Character Interactions</li>
-            <li>Implemented Audio Assets</li>
-            <li>UI Design & Implementation</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+.introduction p {
+  font-size: 125%;
+  margin: 2%;
+  line-height: 2;
+}
 
-    <!--Cell Squadron Grid-->
-  </section>
+.introduction a {
+  font-style:italic;
+}
+/*---------Shipped Projects---------*/
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+.shipped-projects {
+  color: white;
+  margin: 0;
+}
 
-</html>
+.shipped-heading-div {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.shipped-heading {
+  font-size: 150%;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+.shipped-container {
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.shipped-text {
+  font-size: 100%;
+}
+
+@media screen and (max-width: 992px){
+
+  .introduction p {
+    font-size: 15px;
+  }
+
+  .introduction {
+    width: 75%;
+    margin: 0 12.5%;
+    text-align: justify;
+  }
+
+  .introduction .intro-intro {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1250px){
+
+  .introduction {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+}
