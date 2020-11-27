@@ -1,0 +1,144 @@
+html {
+  color: white;
+  height: 100%;
+}
+
+.bg-img {
+  background-image: url("../images/cubes_background.png");
+  height: auto;
+  background-position: center;
+  background-repeat: space;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+hr{
+  height: 5px;
+  width: 98%;
+  margin: 0 0 2% 1%;
+  background-color: white;
+}
+
+a {
+  color: white;
+}
+
+/*----------Navbar----------*/
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  font-size: 200%;
+  font-family: 'Rubik', monospace;
+  margin-left: 1.5%;
+  text-shadow: 2px 2px #000000;
+}
+
+.nav-item {
+  text-shadow: 2px 2px #000000;
+}
+
+/*-----------------Introduction------------*/
+
+.introduction {
+  width: 50%;
+  margin: 0 25%;
+  padding: 1.3em 0;
+  text-align: center;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.introduction .intro-intro {
+  width: 100%;
+  font-size: 300%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 2px #000000;
+  text-align: center;
+}
+
+.introduction p {
+  font-size: 125%;
+  margin: 2%;
+  line-height: 2;
+}
+
+.introduction a {
+  font-style:italic;
+}
+/*---------Shipped Projects---------*/
+
+.projects {
+  color: white;
+  margin: 0;
+}
+
+.shipped-heading-div {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.shipped-heading {
+  font-size: 150%;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+.project-container {
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.shipped-text {
+  font-size: 100%;
+}
+
+/*--------Student Projects Section----------*/
+
+.sp-image {
+  width: 100%;
+}
+
+/*---------Contact Page----------------*/
+
+.contact-form {
+  color: white;
+  text-align: center;
+}
+
+.inputs {
+  width: 100%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 992px){
+
+  .introduction p {
+    font-size: 12px;
+  }
+
+  .introduction {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+
+  .introduction .intro-intro {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1250px){
+
+  .introduction {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+}
