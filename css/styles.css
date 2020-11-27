@@ -74,7 +74,7 @@ a {
 }
 /*---------Shipped Projects---------*/
 
-.shipped-projects {
+.projects {
   color: white;
   margin: 0;
 }
@@ -92,7 +92,7 @@ a {
   text-shadow: 2px 2px #000000;
 }
 
-.shipped-container {
+.project-container {
   padding-bottom: 100px;
   justify-content: center;
 }
@@ -103,12 +103,20 @@ a {
 
 /*--------Student Projects Section----------*/
 
-.student-projects {
-  color: white;
-}
-
 .sp-image {
   width: 100%;
+}
+
+/*---------Contact Page----------------*/
+
+.contact-form {
+  color: white;
+  text-align: center;
+}
+
+.inputs {
+  width: 100%;
+  text-align: justify;
 }
 
 @media screen and (max-width: 992px){
