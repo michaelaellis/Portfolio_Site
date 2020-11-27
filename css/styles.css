@@ -101,6 +101,16 @@ a {
   font-size: 100%;
 }
 
+/*--------Student Projects Section----------*/
+
+.student-projects {
+  color: white;
+}
+
+.sp-image {
+  width: 100%;
+}
+
 @media screen and (max-width: 992px){
 
   .introduction p {
