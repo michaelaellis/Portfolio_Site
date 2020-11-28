@@ -153,6 +153,7 @@ form .submit {
   height: 50px;
   margin-top: 20px;
   margin-bottom: 16px;
+  border-radius: 10px;
 }
 
 form .submit:hover {
