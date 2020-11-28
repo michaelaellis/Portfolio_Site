@@ -135,6 +135,7 @@ input {
 }
 
 form .submit {
+  width: 100%;
   background: white;
   border-color: transparent;
   color: #000000;
@@ -143,6 +144,7 @@ form .submit {
   letter-spacing: 2px;
   height: 50px;
   margin-top: 20px;
+  margin-bottom: 16px;
 }
 
 form .submit:hover {
@@ -169,6 +171,15 @@ form .submit:hover {
 .form-control::placeholder {
   color: white;
   opacity: 1;
+}
+
+.form-control:focus {
+  color: white;
+  background-color: gray;
+}
+
+.form-control:enabled {
+  color: white;
 }
 
 @media screen and (max-width: 992px){
