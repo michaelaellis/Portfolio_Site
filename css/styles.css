@@ -5,9 +5,7 @@ html {
 
 .bg-img {
   background-image: url("../images/cubes_background.png");
-  height: auto;
   background-position: center;
-  background-repeat: space;
   background-size: cover;
   background-attachment: fixed;
 }
